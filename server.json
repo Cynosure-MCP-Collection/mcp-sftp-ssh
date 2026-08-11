@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.andreasjhagen/sftp-ssh",
+  "description": "MCP server for SFTP file operations and SSH command execution",
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@cynosure-mcp/sftp-ssh",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "SFTP_HOST", "description": "Remote SSH/SFTP host name or IP address.", "isRequired": true, "format": "string" },
+        { "name": "SFTP_PORT", "description": "Remote SSH/SFTP port (default: 22).", "isRequired": false, "format": "number" },
+        { "name": "SFTP_USERNAME", "description": "Remote SSH/SFTP user name.", "isRequired": true, "format": "string" },
+        { "name": "SFTP_PASSWORD", "description": "Password authentication. Omit when using a private key.", "isRequired": false, "format": "string", "isSecret": true },
+        { "name": "SFTP_PRIVATE_KEY_PATH", "description": "Local path to an SSH private key. Omit when using a password or inline key.", "isRequired": false, "format": "string", "isSecret": true },
+        { "name": "SFTP_PRIVATE_KEY", "description": "Inline SSH private key. Literal \\n sequences are converted to newlines.", "isRequired": false, "format": "string", "isSecret": true },
+        { "name": "SFTP_PRIVATE_KEY_PASSPHRASE", "description": "Optional private-key passphrase.", "isRequired": false, "format": "string", "isSecret": true },
+        { "name": "SFTP_ROOT", "description": "Remote path exposed as the MCP root (default: /).", "isRequired": false, "format": "string" },
+        { "name": "SSH_HOST_FINGERPRINT", "description": "Optional SHA-256 host-key fingerprint in OpenSSH SHA256:base64 or hexadecimal format.", "isRequired": false, "format": "string" }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/andreasjhagen/Cynosure-MCPs",
+    "source": "github",
+    "subfolder": "mcp-sftp-ssh"
+  }
+}
