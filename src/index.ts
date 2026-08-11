@@ -114,6 +114,7 @@ const server = new McpServer({
   version: '1.0.0',
   title: 'SFTP and SSH',
   description: 'Manage files over SFTP and optionally execute commands over SSH.',
+  icons: [{ src: 'https://unpkg.com/@cynosure-mcp/sftp-ssh@1.0.0/icon.png', mimeType: 'image/png' }],
 });
 
 server.registerTool('sftp_list', {

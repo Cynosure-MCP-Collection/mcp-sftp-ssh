@@ -3,6 +3,12 @@
   "name": "io.github.andreasjhagen/sftp-ssh",
   "description": "MCP server for SFTP file operations and SSH command execution",
   "version": "1.0.0",
+  "icons": [
+    {
+      "src": "https://unpkg.com/@cynosure-mcp/sftp-ssh@1.0.0/icon.png",
+      "mimeType": "image/png"
+    }
+  ],
   "packages": [
     {
       "registryType": "npm",
