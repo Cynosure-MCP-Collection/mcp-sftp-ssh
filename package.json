@@ -39,5 +39,13 @@
     "ssh",
     "remote-files",
     "remote-shell"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cynosure-MCP-Collection/mcp-sftp-ssh.git"
+  },
+  "homepage": "https://github.com/Cynosure-MCP-Collection/mcp-sftp-ssh#readme",
+  "bugs": {
+    "url": "https://github.com/Cynosure-MCP-Collection/mcp-sftp-ssh/issues"
+  }
 }
